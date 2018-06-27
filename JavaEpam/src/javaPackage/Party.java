@@ -1,39 +1,21 @@
 package practice;
 
-public class Party {
-
+public class Party 
+{
 	public static void main(String[] args) 
 	{
-		//System.out.println(Snacks(11,6));
-		
-		int p =Snacks(17,6);
-		if(p==0)
-		{
-			System.out.println("Party was bad");
-		}
-		if(p==1)
-		{
-			System.out.println("Party was good");
-		}
-		if(p==2)
-		{
-			System.out.println("Party was great");
-		}
+	   System.out.println(teaParty(6, 8)); // (6,8) returns 1 ; (20, 6) returns 2 ; (3,8) returns 0;
 	}
 	
-	public static int Snacks(int tea, int candy)
+	public static int teaParty(int tea, int candy)
 	{
-		
-		if((tea<5)||(candy<5))
-		{
+		if(tea < 5 || candy < 5)
 			return 0;
-		}
-		if ((tea>candy*2)||(candy>tea*2))
-		{
-			return 1;
-		}
-		else return 2;
-			
+		else if(candy >= tea*2 || tea >= candy*2)
+			return 2;
+		return 1;
 	}
-
+	
+	
+	
 }
