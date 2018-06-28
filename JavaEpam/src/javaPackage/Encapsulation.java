@@ -28,27 +28,27 @@ public class Encapsulation
 	
 	// setter values
 	
-	public void SetName(String name)
+	public void setName(String name)
 	{
 
-		this.eName=name;
+		Encapsulation.eName=name;
 	}
 	
-	public void SetEID(int ID) 
+	public void setEID(int ID) 
 	{
-		this.eID=ID;
+		Encapsulation.eID=ID;
 	}
 	
-	public void SetEexp(int exp)
+	public void setEexp(int exp)
 	{
-		this.eExp=exp;
+		Encapsulation.eExp=exp;
 	}
 	
 	public Encapsulation(int ID, String name, int i)
-	{
-		this.eID=ID;
-		this.eName=name;
-		this.eExp=i;
+	{ 
+		Encapsulation.eID=ID; // constructor this.eID=iD
+		Encapsulation.eName=name;  // constructor this.eName=name;
+		Encapsulation.eExp=i;  // constructor this.eExp=i
 		
 	}
 	
@@ -56,11 +56,11 @@ public class Encapsulation
 	{
 		
 		Encapsulation encp = new Encapsulation(1012, "Raj", 3);
-		int EID = encp.getEID();
-		String Ename =encp.getName();
-		int Eexp =encp.getEexp();
+		int eID = encp.getEID();
+		String eName =encp.getName();
+		int eEexp =encp.getEexp();
 		
-		System.out.println("ID :" +  EID  + " Name : " + Ename + " Experience :" + Eexp );
+		System.out.println("ID :" +  eID  + " Name : " + eName + " Experience :" + eEexp );
 		
 		
 	}

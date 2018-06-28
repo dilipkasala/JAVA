@@ -10,7 +10,7 @@ public class Inheritance
 		dev.Display();
 		
 		Employee emp = new Employee(11,"Raj");
-		emp.Display();
+		emp.display();
 
 	}
 
@@ -21,19 +21,19 @@ class Employee{
 	String empName;
 	
 	
-	public Employee()
+	public Employee()  // this is constructor
 	{
 		System.out.println("\nEmployee Default constructor");
 	}
 	
 	
-	public Employee(int id, String name)
+	public Employee(int id, String name) // this is constructor
 	{
 		empId=id;
 		empName=name;
 	}
 	
-	public void Display()
+	public void display()
 	{
 	    System.out.printf("\nEmployee Id:%d\nEmplyee Name:%s",empId, empName);
 	}

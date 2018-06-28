@@ -2,10 +2,10 @@ package practice;
 
 public class Overloading 
 {
-    static int EID;
-    static String Ename;
-    static String Etitle;
-    static int Eexp;
+    static int eID;
+    static String eNname;
+    static String eTitle;
+    static int eEexp;
 	
 	public static void main(String[] args) 
 	{
@@ -16,28 +16,28 @@ public class Overloading
 	
 	public static void Display(int IDs,String name)
 	{
-		EID=IDs;
-		Ename=name;
-		System.out.println("this is from first classs -" + EID +","+ Ename);
+		eID=IDs;
+		eNname=name;
+		System.out.println("this is from first classs :" + eID +","+ eNname);
 		
 	}
 	
 	public static void Display(int IDs,String name,String title)
 	{
 		
-		  EID = IDs;
-		  Ename=name;
-		  Etitle = title;
-		  System.out.println("this is from second classs - " + EID +","+ Ename +","+ Etitle);
+		  eID = IDs;
+		  eNname=name;
+		  eTitle = title;
+		  System.out.println("this is from second classs : " + eID +","+ eNname +","+ eTitle);
 	}
 	
 	public static void Display(int IDs,String name,String title,int exp)
 	{
-		  EID = IDs;
-		  Ename=name;
-		  Etitle = title;
-		  Eexp=exp;
-		  System.out.println("this is from third classs -" + EID +","+ Ename +","+ Etitle +","+ Eexp);
+		  eID = IDs;
+		  eNname=name;
+		  eTitle = title;
+		  eEexp=exp;
+		  System.out.println("this is from third classs :" + eID +","+ eNname +","+ eTitle +","+ eEexp);
 		
 	}
 
