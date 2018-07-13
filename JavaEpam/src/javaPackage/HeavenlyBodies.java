@@ -61,8 +61,8 @@ public class HeavenlyBodies
             System.out.println("In equals");
             if (obj instanceof HeavenlyBodies) 
             {
-            	HeavenlyBodies pp = (HeavenlyBodies) obj;
-                return (pp.name.equals(this.name) && pp.orbitalPeriod == this.orbitalPeriod);
+            	HeavenlyBodies hb = (HeavenlyBodies) obj;
+                return (hb.name.equals(this.name) && hb.orbitalPeriod == this.orbitalPeriod);
             } else {
                 return false;
             }
