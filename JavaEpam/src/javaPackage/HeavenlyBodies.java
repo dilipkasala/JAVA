@@ -45,6 +45,7 @@ public class HeavenlyBodies
 
 	    
 	    // code updated by Dilip
+	    
 	    @Override
         public int hashCode()
         {
@@ -58,7 +59,8 @@ public class HeavenlyBodies
         public boolean equals(Object obj)
         {
             System.out.println("In equals");
-            if (obj instanceof Price) {
+            if (obj instanceof HeavenlyBodies) 
+            {
             	HeavenlyBodies pp = (HeavenlyBodies) obj;
                 return (pp.name.equals(this.name) && pp.orbitalPeriod == this.orbitalPeriod);
             } else {
